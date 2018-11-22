@@ -1,0 +1,49 @@
+#div_one {
+    background-color: white;
+    float: left;
+    width: 100%;
+}
+
+#div_two {
+    background-color: orange;
+    height: 30%;
+}
+
+#div_three {
+    background-color: blueviolet;
+    height: 30%;
+}
+
+img.backImg {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*顶部菜单*/
+div.top_menu {
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+/*顶部菜单各个小块*/
+div.top_menu_div {
+    background-color: cadetblue;
+    position: relative;
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    margin: 10px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        table{
+            border-collapse: collapse;/*border-collapse 属性设置是否将表格边框折叠为单一边框*/
+            width: 30%;
+        }
+        /*th{*/
+            /*background-color: blueviolet;*/
+        /*}*/
+        table,th,td{
+            border: 1px solid blue;/*solid代表边框实现*/
+            height: 30px;
+            text-align: center;
+            vertical-align: center;
+            font-family: Ayuthaya,sans-serif;/*设置字体*/
+            background-color: aqua;/*背景色*/
+            /*padding-bottom: 20px;*/ /*内间距 */
+        }
+    </style>
+</head>
+<body>
+<table>
+    <!--tr代表行 th or td 代表列  tr中包含多少个th or td-->
+    <tr>
+        <th>one</th>
+        <th>two</th>
+        <th>three</th>
+    </tr>
+    <tr>
+        <th>four</th>
+        <th>six</th>
+        <th>seven</th>
+    </tr>
+    <tr>
+        <td>eight</td><!--td 自动靠左 th居中 如果样式都设置了text-align 会遵循样式-->
+        <td>nine</td>
+        <td>ten</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/*相对定位 relative*/
+h2.left{
+    position: relative;
+    left: -20px;
+}
+h2.right{
+    position: relative;
+    left: 20px;
+}
+/*绝对定位 absolute*/
+h2.absolute_test{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+/*固定定位 fixed*/
+h2.fixed_test1{
+    position: fixed;
+    left: 20px;
+    top: 50px;
+}
+h2.fixed_test2{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+}
+/*文字超过一定高度可以滚动*/
+div.scroll_test{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    width: 200px;
+    height: 100px;
+    background-color: palegoldenrod;
+    /*overflow: scroll;//这个属性表示可以滚动*/
+    /*overflow: hidden;!*超出高度会隐藏溢出来的内容*!*/
+    overflow: auto;/*自动处理溢出*/
+}
+img.clip_test{
+    position: absolute;
+    clip: rect(0px 50px 200px 0px);
+    /*clip:rect(0px 50px 200px 0px)*/
+
+}
+img.vertical_top {
+    vertical-align: text-top;
+}
+img.vertical_bottom{
+    vertical-align: text-bottom;
+}
+/*img.index_test{*/
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*right: 0px;*/
+    /*z-index: -1;*/
+/*}*/
+/*img.float_test{*/
+    /*float: right;*/
+    /*border: 1px dotted red;*/
+/*}*/
+div{
+    float: right;
+    border: 1px solid red;
+    text-align: center;margin:0 0 15px 20px;
+    padding:15px;
+}

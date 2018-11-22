@@ -1,0 +1,28 @@
+div.container{
+    width: 100%;
+    border: 1px solid gray;
+    font-family: Ayuthaya, serif;
+    line-height: normal;
+}
+div.header,div.footer{
+    padding: 0.5em;
+    color: white;
+    background-color: gray;
+    clear: left;
+}
+h1.header{
+    margin: 0;
+    padding: 0;
+}
+div.left{
+    float: left;
+    width: 160px;
+    margin: 0;
+    padding: 1em;
+    font-size: 13px;
+}
+div.content{
+    margin-left: 190px;
+    border-left: 1px solid gray;
+    padding: 1em;
+}

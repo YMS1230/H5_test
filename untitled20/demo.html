@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #test {
+            color: #FCC131;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        /*改变内容*/
+        function testDemo1() {
+            let tmp = document.getElementById("test");
+            tmp.innerHTML = "yang mao sheng"
+        }
+
+        /*改变图像*/
+        function testDemo2() {
+            let tmp = document.getElementById("testImg");
+            if (tmp.src.match("bulbon")) {
+                tmp.src = "eg_bulboff.gif";
+            } else {
+                tmp.src = "eg_bulbon.gif";
+            }
+        }
+
+        /*改变样式*/
+        function testDemo3() {
+            let tmpColor = document.getElementById("test");
+            tmpColor.style.color = "#FF4545";
+        }
+
+        /*验证输入*/
+        function testDemo4() {
+            var inputS = document.getElementById("inputDemo").value;
+            if (inputS == "" || isNaN(inputS)) {
+                alert("请输入合法的数字!");
+            } else {
+                alert("输入正确");
+            }
+        }
+    </script>
+
+    <p>第一个JavaScrip</p>
+    <p id="test">测试</p>
+    <div>
+
+    </div>
+    <button type="button" onclick="alert('第一个JavaScrip')">点我</button>
+    <button type="button" onclick="testDemo1()">click me</button>
+    <img id="testImg" onclick="testDemo2()" src="eg_bulboff.gif">
+    <button type="button" onclick="testDemo3()">点我变色</button>
+
+    <p>请输入数字,否则会弹框⚠️</p>
+    <input id="inputDemo" type="text">
+    <button type="button" onclick="testDemo4()">验证输入</button>
+
+</body>
+
+</html>

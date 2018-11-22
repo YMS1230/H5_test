@@ -1,0 +1,49 @@
+.news {
+    background-color: orange;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+}
+
+.news img {
+    float: left;
+    border-radius: 20px 0 0 20px;
+}
+
+.news p {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+p.tip span {
+    font-weight: bold;
+    background-color: cadetblue;
+}
+
+ul {
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+a {
+    color: white;
+    background-color: cadetblue;
+    float: left;
+    border-right: 1px solid white;
+    padding: 0.2em 0.6em;
+}
+
+a:hover {
+    background-color: cornflowerblue;
+}
+
+img {
+    float: left;
+    clear: both;
+}
+

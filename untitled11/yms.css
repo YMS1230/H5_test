@@ -1,0 +1,29 @@
+/**{*/
+    /*background-color: red;!* "*"代表HTML中所有的元素 *!*/
+/*}*/
+#divBlock1{
+    /*"#" 用在css中代表id选择器*/
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+}
+#divBlock2{
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+}
+
+/*假设有一个空元素，它有外边距，但是没有边框或填充。在这种情况下，上外边距与下外边距就碰到了一起，它们会发生合并*/
+#divBlock3{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: cadetblue;
+}
+#divBlock4{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: blueviolet;
+}
