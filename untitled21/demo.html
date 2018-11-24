@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="demo.css">
+    <script src="demom.js"></script>
+
+    <script>
+        document.write("<p>呵呵</p>"); //JavaScript把标签写入到HTML文档中
+
+        // 变量
+        var a = 5, b = 6;
+        var z = a + b;
+        document.write("a+b=" + z);
+
+        //创建数组
+        var cars = new Array();
+        cars[0] = "yms";
+        cars[1] = "yms1";
+        cars[2] = "yms2";
+        document.write("<br>" + cars);
+
+        //创建对象
+        var person = {
+            id: 1,
+            name: "杨茂盛",
+            age: 24,
+            sex: "man"
+        };
+        document.write("<br>" + person.name);
+
+        //对象
+        people = new Object();
+        people.name = "杨茂盛";
+        people.age = 24;
+        document.write("<br>"+people.age);
+
+        var string = "hello";
+        var  changeString = string.toUpperCase();
+        document.write("<br>"+changeString);
+    </script>
+</head>
+
+<body>
+    <p>一个验证输入的JavaScript代码</p>
+    <input id="input_test" type="请输入:">
+    <button type="button" onclick="test1()">验证输入</button>
+    <p id="p_test">hello world</p>
+    <button type="button" onclick="test2()">点我改变文字</button>
+    <button type="button" onclick="test3()">测试之前的文档是否会消失</button>
+</body>
+
+</html>
