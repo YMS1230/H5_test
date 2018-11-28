@@ -12,53 +12,94 @@
 <body>
     <p id="function_test"></p>
     <script>
-        document.write("<p>呵呵</p>"); //JavaScript把标签写入到HTML文档中
+        // document.write("<p>呵呵</p>"); //JavaScript把标签写入到HTML文档中
 
-        // 变量
-        var a = 5, b = 6;
-        var z = a + b;
-        document.write("a+b=" + z);
+        // // 变量
+        // var a = 5, b = 6;
+        // var z = a + b;
+        // document.write("a+b=" + z);
 
-        //创建数组
-        var cars = new Array();
-        cars[0] = "yms";
-        cars[1] = "yms1";
-        cars[2] = "yms2";
-        document.write("<br>" + cars);
+        // //创建数组
+        // var cars = new Array();
+        // cars[0] = "yms";
+        // cars[1] = "yms1";
+        // cars[2] = "yms2";
+        // document.write("<br>" + cars);
 
-        //创建对象
-        var person = {
-            id: 1,
-            name: "杨茂盛",
-            age: 24,
-            sex: "man"
-        };
-        document.write("<br>" + person.name);
+        // //创建对象
+        // var person = {
+        //     id: 1,
+        //     name: "杨茂盛",
+        //     age: 24,
+        //     sex: "man"
+        // };
+        // document.write("<br>" + person.name);
 
         //对象
-        people = new Object();
-        people.name = "杨茂盛";
-        people.age = 24;
-        document.write("<br>" + people.age);
+        // people = new Object();
+        // people.name = "杨茂盛";
+        // people.age = 24;
+        // document.write("<br>" + people.age);
 
-        var string = "hello";
-        var changeString = string.toUpperCase();//字符转换为大写
-        document.write("<br>" + changeString);
+        // var string = "hello";
+        // var changeString = string.toUpperCase();//字符转换为大写
+        // document.write("<br>" + changeString);
 
         //函数
-        function myFunction1(var1, var2) {
-            // alert(var1+var2);
-            return var1 + var2;
+        // function myFunction1(var1, var2) {
+        //     // alert(var1+var2);
+        //     return var1 + var2;
+        // }
+        // document.getElementById("function_test").innerHTML = myFunction1(20, 30);
+
+        //for循环
+        // for (var index = 0; index < 5; index++) {
+        //     document.write(index + "<br>")
+        // }
+
+        //while循环
+        // while (i < 5) {
+        //     document.write(i + "<br>");
+        //     i++;
+        // }
+
+        //do while
+        // var tmS = 0;
+        // do {
+        //     document.write("满足条件");
+        //     tmpS++;
+        // } while (tmpS<5);
+
+        //break
+        // for (let index = 0; index < 5; index++) {
+        //     if (index == 3) {
+        //         break;
+        //     }
+        //     document.write(index+"<br>");
+        // }
+
+        function test4() {
+            try {
+                var tmp = document.getElementById("input_test").value;
+                if (tmp > 5) throw "输入的数过大";
+                if(tmp == "") throw "请输入内容"
+            } catch (error) {
+                var y = document.getElementById("p_test");
+                y.innerHTML = "Error:" + error + "";
+            }
         }
-        document.getElementById("function_test").innerHTML = myFunction1(20,30);
+
     </script>
     <p>一个验证输入的JavaScript代码</p>
     <input id="input_test" type="请输入:">
-    <button type="button" onclick="test1()">验证输入</button>
-    <p id="p_test">hello world</p>
+    <!-- <button type="button" onclick="test1()">验证输入</button>
     <button type="button" onclick="test2()">点我改变文字</button>
     <button type="button" onclick="test3()">测试之前的文档是否会消失</button>
-    <button type="button" onclick="myFunction1(20,30)">计算</button>
+    <button type="button" onclick="myFunction1(20,30)">计算</button> -->
+    <p id="p_test">hello world</p>
+
+    <button type="button" onclick="test4()">测试输入值</button>
+
 </body>
 
 </html>
