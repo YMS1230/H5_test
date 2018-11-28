@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <button id="myBtn">点击这里</button>
+
+    <script>
+        document.write(Date());//写入日期
+        //更改输出内容
+        function demo1() {
+            var tmp = document.getElementById("h1_test");
+            tmp.innerHTML = "更改过的JavaScript代码";
+        }
+        //更改css样式
+        function demo2() {
+            var tmp = document.getElementById("p_test");
+            tmp.style.color = "red";
+        }
+        //隐藏内容
+        function demo3() {
+            var tmp = document.getElementById("p_test");
+            tmp.style.visibility = "hidden";
+        }
+        //显示内容
+        function demo4() {
+            var tmp = document.getElementById("p_test");
+            tmp.style.visibility = "visible";
+        }
+        function changeText(contentS) {
+            contentS.innerHTML = "谢谢";
+        }
+        //分配事件
+        function printDate() {
+            var tmp = document.getElementById("p_test");
+            tmp.innerHTML = Date();
+        }
+
+        document.getElementById("myBtn").onclick = function () { displayDate() };
+
+        function displayDate() {
+            alert("1111");
+            document.getElementById("demo").innerHTML = Date();
+        }
+        function checkCookies() {
+            if (navigator.cookieEnabled == true) {
+                alert("cookies已经启用");
+            } else {
+                alert("cookies已经禁用");
+            }
+        }
+        function changeInputString() {
+            var tmp = document.getElementById("input_test");
+            tmp.value = tmp.value.toUpperCase();
+        }
+    </script>
+    <h1 id="h1_test">JavaScript代码</h1>
+    <p id="p_test">我是常规的一个段落</p>
+    <button type="button" onclick="demo1()">点我改变标题文字</button>
+    <button type="button" onclick="demo2()">点我改变段落颜色</button>
+    <button type="button" onclick="demo3()">点我隐藏段落</button>
+    <button type="button" onclick="demo4()">点我显示段落</button>
+    <p onclick="this.innerHTML = '谢谢'">点我试试</p>
+    <p onclick="changeText(this)">请点击文本</p>
+    <p>点击按钮就能实现<em>printDate</em>函数</p>
+    <button type="button" onclick="printDate()">点击这里</button>
+    <p id="demo">124</p>
+    <input type="text" id="input_test" onchange="changeInputString()">
+</body>
+
+</html>

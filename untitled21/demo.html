@@ -78,11 +78,12 @@
         //     document.write(index+"<br>");
         // }
 
+        //throw语句
         function test4() {
             try {
                 var tmp = document.getElementById("input_test").value;
                 if (tmp > 5) throw "输入的数过大";
-                if(tmp == "") throw "请输入内容"
+                if (tmp == "") throw "请输入内容"
             } catch (error) {
                 var y = document.getElementById("p_test");
                 y.innerHTML = "Error:" + error + "";
