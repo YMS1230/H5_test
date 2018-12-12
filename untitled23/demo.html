@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript节点</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="startTime()">
+    <div id="div3">
+
+    </div>
+    <script>
+        //创建新的元素
+        // function addChildElement() {
+        //     var tmp = document.createElement("p");
+        //     var tmp1 = document.createTextNode("这是新段落");
+        //     tmp.appendChild(tmp1);
+
+        //     var divTmp = document.getElementById("div1");
+        //     divTmp.appendChild(tmp);
+        // }
+
+        // //删除元素
+        // function remomveChildElement() {
+        //     var divTmp = document.getElementById("div2");
+        //     var pTmp = document.getElementById("p3");
+        //     divTmp.removeChild(pTmp);
+        // }
+
+        // //方法添加到JavaScript对象中
+        // function person(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.changeName = changeName;
+
+        //     function changeName(name) {
+        //         this.name = name;
+        //     }
+        // }
+        // myPerson = new person("yms", 124);
+        // myPerson.changeName("YMS");
+        // document.write(myPerson.name);
+
+        // //替换字符
+        // var string = "hello world";
+        // document.write("<br>" + string.replace(/hello/, "HELLO"));
+
+        //getTime
+        function startTime() {
+            var currentTime = new Date();
+        // document.write("<br>" + currentTime.getTime());
+
+        //钟表
+        var h = currentTime.getHours();
+        var m = currentTime.getMinutes();
+        var s = currentTime.getSeconds();
+
+
+        h = checkTime(h);
+        m = checkTime(m);
+
+        document.getElementById('div3').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout('startTime()', 500);
+
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i += "0";
+            }
+            return i;
+        }
+    </script>
+
+    <!-- <div id="div1" style="background-color: cornflowerblue;width: 10%">
+        <p id="p1">这是段落1</p>
+        <p id="p2">这是段落2</p>
+    </div>
+
+    <button type="button" onclick="addChildElement()">点击创建新的段落</button>
+
+    <div id="div2" style="background-color:bisque;width: 10%">
+        <p id="p3">这是段落3</p>
+        <p id="p4">这是段落4</p>
+    </div>
+    <button type="button" onclick="remomveChildElement()">点击删除段落3</button> -->
+
+</body>
+
+</html>

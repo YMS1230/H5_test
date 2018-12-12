@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>123</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <button id="myBtn">点击这里</button>
-
+    
     <script>
         document.write(Date());//写入日期
         //更改输出内容
@@ -54,9 +54,19 @@
                 alert("cookies已经禁用");
             }
         }
+        //改变输入
         function changeInputString() {
             var tmp = document.getElementById("input_test");
             tmp.value = tmp.value.toUpperCase();
+        }
+        //鼠标放在元素上
+        function moveOver(obj) {
+            obj.innerHTML = "谢谢";
+        }
+        //鼠标离开元素
+
+        function mOut(obj) {
+            obj.innerHTML = "请把鼠标放在上面";
         }
     </script>
     <h1 id="h1_test">JavaScript代码</h1>
@@ -71,6 +81,7 @@
     <button type="button" onclick="printDate()">点击这里</button>
     <p id="demo">124</p>
     <input type="text" id="input_test" onchange="changeInputString()">
+    <div onmousedown="moveOver(this)" onmouseout="mOut(this)" style="background-color:green;width:120px;height:20px;padding:40px;color:#ffffff;">把鼠标放在上面</div>
 </body>
 
 </html>
