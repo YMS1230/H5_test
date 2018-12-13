@@ -1,21 +1,8 @@
-[title ~= 杨茂盛]{
-    color: red;
-}
-p{background-color: aquamarine;padding: 20px}
-
-input[type = "text"]
-{
-width: 150px;
-background-color: white;
-display:block;
-margin-top: 30px;
-
-}
-input[type = "button"]
-{
-width: 150px;
-background-color: white;
-display:block;
-margin-top: 10px;
-
+.normal_div{
+    background-color: antiquewhite;
+    width:200px;
+    height:200px;
+    float: left;
+    text-align: center;
+line-height: 200px; 
 }
