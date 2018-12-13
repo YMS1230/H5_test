@@ -15,15 +15,37 @@ body{
 }
 /* 无序列表ul */
 .head_ul{
-    margin:0;
+    margin:0 0 0 40px;
+}
+.head_title_ul{
+  margin:0px 0 0 120px; 
+  position: relative;
+  float: left;
+  line-height: 60px;
 }
 /* li标签 */
 .head_li{
     color: #838383;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
     list-style-type:none;
     margin-left: 8px;
+    display: inline;
+}
+.head_title_li{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.5px;
+    list-style-type:none;
+    margin-left: 40px;
+    display: inline;
+}
+.content_title_li{
+    color: #838383;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    list-style-type:none;
+    margin-left: 40px;
     display: inline;
 }
 /* 头部 */
@@ -50,8 +72,22 @@ body{
 }
 /* 头部主题 */
 .head_title_div{
-    background-color: antiquewhite;
     width: 100%;
-    height: 60px;
+    height: 120px;
     float: left;
+    margin:20px 0 0 0;
+}
+/* 主体内容 */
+.content{
+    background-color: bisque;
+    width: 100%x;
+    height: 80%;
+    margin:180px 80px 0px 80px;
+}
+/* 主体标题 */
+.content_head_div{
+    width: 80%x;
+    height: 80px;
+    left: 20%;
+    line-height: 80px;
 }
