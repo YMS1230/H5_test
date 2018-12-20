@@ -26,6 +26,12 @@ body{
   float: left;
   line-height: 60px;
 }
+.content_goods_ul{
+    margin:0px 0 0 0px; 
+    position: relative;
+    float: left;
+    /* line-height: 60px; */
+  }
 /* li标签 */
 .head_li{
     color: #838383;
@@ -43,13 +49,29 @@ body{
     margin: 0 40px 0 0px;
     display: inline;
 }
+.content_goods_title_li{
+    color:black;
+    font-size: 17px;
+    list-style-type:none;
+    margin-left: 15spx;
+    display: inline;
+    font-weight:bold;
+}
 .content_title_li{
     color: #838383;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     list-style-type:none;
-    margin-left: 40px;
+    /* display: inline; */
+}
+.content_goods_p{
+    color:#FC5008;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-left: 20px;
     display: inline;
+
+    /* list-style-type:none; */
 }
 /* 头部 */
 .head{
@@ -64,6 +86,16 @@ body{
     height: 20px; 
     margin-left: 5px;
     color: #838383;
+}
+.content_goods_button{
+    width: 180px;
+    height: 45px;
+    margin-right: 40px;
+    float: right;
+    background-color:white;
+    border:1px solid #FC5008;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.5px;
 }
 /* 登录按钮div */
 .login_div{
@@ -85,7 +117,6 @@ body{
     width: 100%x;
     height: 100%;
     margin:140px 80px 0px 80px;
-    background-color: wheat;
 }
 /* 主体标题 */
 .content_head_div{
@@ -105,22 +136,21 @@ body{
 /* 主体内容2(4张图片) */
 .content_div2{
     width: 1212px;
-    margin: 40px 0% 0 0%;
-    background-color: aquamarine;
+    margin: 20px 0% 0 0%;
     display: flex;
     flex-wrap: wrap;
 }
 /* 商品模块 */
 .content_div2_child1{
 /* width: 40%; */
-    background-color:rebeccapurple;
+    /* background-color:rebeccapurple; */
     width: 606px;
-    height:500px;
+    height:450px;
 }
 .content_div2_child2{
-    background-color:rebeccapurple;
+    /* background-color:rebeccapurple; */
     width: 606px;
-    height:500px;
+    height:450;
 }
 /* 商品模块图片 */
 .content_div2_img{
