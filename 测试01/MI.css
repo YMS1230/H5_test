@@ -114,8 +114,6 @@ body{
 /* 商品模块 */
 .content_div2_child1{
 width: 200px;
-height: 20%;
-margin: 0 auto;
+height: 200px;
 background-color: brown;
-float: left;
 }
