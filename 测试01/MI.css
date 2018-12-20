@@ -4,7 +4,7 @@ body{
 }
 .box{
     width: 100%;
-    height: 1000px;
+    height: 100px;
 }
 /* 导航栏 */
 .navgation{
@@ -16,6 +16,9 @@ body{
 /* 无序列表ul */
 .head_ul{
     margin:0 0 0 40px;
+}
+.head_ul1{
+    margin-left: -40px;
 }
 .head_title_ul{
   margin:0px 0 0 120px; 
@@ -37,7 +40,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14.5px;
     list-style-type:none;
-    margin-left: 40px;
+    margin: 0 40px 0 0px;
     display: inline;
 }
 .content_title_li{
@@ -79,15 +82,40 @@ body{
 }
 /* 主体内容 */
 .content{
-    background-color: bisque;
     width: 100%x;
-    height: 80%;
-    margin:180px 80px 0px 80px;
+    height: 100%;
+    margin:140px 80px 0px 80px;
+    background-color: wheat;
 }
 /* 主体标题 */
 .content_head_div{
     width: 80%x;
-    height: 80px;
-    left: 20%;
-    line-height: 80px;
+    height: 70px;
+    line-height: 70px;
+}
+/* 主体内容1(图片) */
+.content_div1{
+    width: 100%;
+    height: 230px;
+}
+.content_head_img{
+    width: 100%;
+    margin: 0 auto;
+}
+/* 主体内容2(4张图片) */
+.content_div2{
+    width: 86%;
+    height: 1000px;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: aquamarine;
+    float: left;
+}
+/* 商品模块 */
+.content_div2_child1{
+width: 200px;
+height: 20%;
+margin: 0 auto;
+background-color: brown;
+float: left;
 }
